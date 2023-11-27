@@ -1,0 +1,12 @@
+import re 
+
+text = "The quick brown fox"
+pattern = r"quick"
+
+search = re.match(pattern,text)
+if search:
+    print("Match found:", search.group())
+else:
+    print("Pattern not found")
+
+
